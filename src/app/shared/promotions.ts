@@ -13,12 +13,12 @@ export const PROMOTIONS: Promotion[] = [
     },
     {
       id: '1',
-      name: 'Arnab-Vivek-Pritam-Sausage',
+      name: 'Sausage',
       image: '/assets/images/chicken-sausage.jpg',
       label: 'New',
       price: '69.9',
       featured: true,
       // tslint:disable-next-line:max-line-length
-      description: 'Featuring mouthwatering 6 inch sausages, made with selected five different spices. Approved by our lovely Chef.'
+      description: 'Featuring mouthwatering sausages, made with selected five different spices. Approved by our Chef.'
     }
   ];

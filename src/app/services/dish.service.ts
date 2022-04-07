@@ -15,10 +15,12 @@ export class DishService {
     });
   }
 
-  getDish(id: string): Promise<Dish> {
+  getDish(id: any): Promise<Dish> {
     return new Promise(resolve=> {
       // Simulate server latency with 2 second delay
-        setTimeout(() => resolve(DISHES.filter((dish) => (dish.id === id))[0]), 2000);
+        setTimeout(() => resolve(DISHES.filter((a) => {
+          return (a.id === id.toString())
+        })[0]));
     });
   }
 
